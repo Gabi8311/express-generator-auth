@@ -60,6 +60,6 @@ router.get("/logout", (req, res) => {
 
 
 ////////////////////Copiado//////////
-router.get('/pagina-privada', checkAuthenticated, (req, res) => res.render('auth/principal', { user: req.user }))   
+router.get('/', checkAuthenticated, (req, res) => res.render('auth/index', { user: req.user }))   
 
 module.exports = router
